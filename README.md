@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎙️ AI Meeting Assistant
+#  AI Meeting Assistant
 
 **Transform any meeting recording into actionable insights in minutes.**
 
@@ -19,18 +19,18 @@ Paste a YouTube link or upload an audio file — get a professional summary, act
 
 | Feature | Description |
 |---|---|
-| 🗣️ **Dual Transcription** | OpenAI Whisper (English) + Sarvam AI (Hinglish — Hindi+English) |
-| 📝 **Smart Summarization** | Map-reduce summaries via Mistral LLM with LangChain LCEL |
-| ✅ **Action Item Extraction** | Tasks, owners, and deadlines pulled from the transcript |
-| 🔑 **Key Decisions** | Important decisions identified and listed |
-| ❓ **Open Questions** | Unresolved questions surfaced for follow-up |
-| 💬 **RAG-Powered Chat** | Ask questions about the meeting — answers grounded in the transcript |
-| 📥 **PDF & TXT Export** | Download professional meeting reports |
-| 🎨 **Polished UI** | Dark-themed Streamlit app with custom CSS |
+| **Dual Transcription** | OpenAI Whisper (English) + Sarvam AI (Hinglish — Hindi+English) |
+| **Smart Summarization** | Map-reduce summaries via Mistral LLM with LangChain LCEL |
+| **Action Item Extraction** | Tasks, owners, and deadlines pulled from the transcript |
+| **Key Decisions** | Important decisions identified and listed |
+| **Open Questions** | Unresolved questions surfaced for follow-up |
+| **RAG-Powered Chat** | Ask questions about the meeting — answers grounded in the transcript |
+| **PDF & TXT Export** | Download professional meeting reports |
+| **Polished UI** | Dark-themed Streamlit app with custom CSS |
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```mermaid
 flowchart LR
@@ -47,7 +47,7 @@ flowchart LR
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Speech-to-Text**: [OpenAI Whisper](https://github.com/openai/whisper) (local) + [Sarvam AI](https://sarvam.ai) (Hinglish)
 - **LLM**: [Mistral AI](https://mistral.ai) via LangChain
@@ -60,7 +60,7 @@ flowchart LR
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -129,7 +129,7 @@ ai-meeting-assistant/
 
 ---
 
-## 📄 Usage
+##  Usage
 
 1. **Paste a YouTube URL** or **upload an audio/video file** (MP3, MP4, WAV, M4A, WebM)
 2. Select the **language** (English or Hinglish)
@@ -140,7 +140,7 @@ ai-meeting-assistant/
 
 ---
 
-## 🔑 Environment Variables
+##  Environment Variables
 
 | Variable | Required | Description |
 |---|---|---|
@@ -150,7 +150,7 @@ ai-meeting-assistant/
 
 ---
 
-## 🐳 Docker
+##  Docker
 
 ### Quick Start (Local)
 
@@ -181,7 +181,7 @@ cp .env.example .env
 
 ---
 
-## ☁️ AWS Deployment (24/7)
+##  AWS Deployment (24/7)
 
 Deploy to an EC2 instance running Docker for always-on operation.
 
@@ -240,10 +240,10 @@ docker compose down
 ### 24/7 Operation
 
 The container is configured with `restart: unless-stopped`, which means:
-- ✅ Auto-restarts on application crash
-- ✅ Auto-restarts after Docker daemon restart
-- ✅ Auto-restarts after EC2 reboot
-- ❌ Only stops when you explicitly run `docker compose down`
+-  Auto-restarts on application crash
+-  Auto-restarts after Docker daemon restart
+-  Auto-restarts after EC2 reboot
+-  Only stops when you explicitly run `docker compose down`
 
 ### Cost Estimate
 
@@ -255,12 +255,12 @@ The container is configured with `restart: unless-stopped`, which means:
 
 ---
 
-## 📜 License
+##  License
 
 This project is for educational and portfolio purposes.
 
 ---
 
 <div align="center">
-<sub>Built with ❤️ using Python, Whisper, Mistral AI, LangChain, ChromaDB & Streamlit</sub>
+<sub>Built with  using Python, Whisper, Mistral AI, LangChain, ChromaDB & Streamlit</sub>
 </div>
