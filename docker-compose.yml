@@ -1,0 +1,74 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# AI Meeting Assistant — Docker Compose
+# ══════════════════════════════════════════════════════════════════════════════
+# Usage:
+#   Development:  docker compose up --build
+#   Production:   docker compose -f docker-compose.yml up -d --build
+#   Stop:         docker compose down
+#   Logs:         docker compose logs -f
+# ══════════════════════════════════════════════════════════════════════════════
+
+services:
+  ai-meeting-assistant:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ai-meeting-assistant
+    image: ai-meeting-assistant:latest
+
+    # ── Port mapping ──────────────────────────────────
+    ports:
+      - "8501:8501"
+
+    # ── Environment variables (API keys) ──────────────
+    # Option 1: Load from .env file (recommended for development)
+    env_file:
+      - .env
+
+    # Option 2: Explicit variables (uncomment & set for production)
+    # environment:
+    #   - MISTRAL_API_KEY=your_key_here
+    #   - SARVAM_API_KEY=your_key_here          # Optional: Hinglish support
+    #   - WHISPER_MODEL=small                     # tiny|base|small|medium|large
+    #   - SARVAM_STT_MODEL=saaras:v2.5
+
+    # ── Persistent volumes ────────────────────────────
+    # Keep downloaded audio and vector DB across container restarts
+    volumes:
+      - meeting_downloads:/app/downloads
+      - meeting_vectordb:/app/vector_db
+
+    # ── Restart policy — keeps the app running 24/7 ───
+    # "unless-stopped" restarts on crash AND on Docker daemon restart (reboot)
+    # Only stops if you explicitly run `docker compose down`
+    restart: unless-stopped
+
+    # ── Resource limits (prevent OOM on small instances) ──
+    deploy:
+      resources:
+        limits:
+          memory: 6G       # Cap at 6GB (PyTorch + Whisper can be hungry)
+        reservations:
+          memory: 2G       # Guarantee at least 2GB
+
+    # ── Health check ──────────────────────────────────
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 90s    # Give Whisper model time to load on first request
+
+    # ── Logging ───────────────────────────────────────
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"    # Rotate logs at 50MB
+        max-file: "5"      # Keep 5 rotated log files
+
+# ── Named volumes ───────────────────────────────────────
+volumes:
+  meeting_downloads:
+    driver: local
+  meeting_vectordb:
+    driver: local
