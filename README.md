@@ -15,7 +15,7 @@ Paste a YouTube link or upload an audio file — get a professional summary, act
 
 ---
 
-## ✨ Features
+##  Features
 
 | Feature | Description |
 |---|---|
@@ -34,14 +34,14 @@ Paste a YouTube link or upload an audio file — get a professional summary, act
 
 ```mermaid
 flowchart LR
-    A["🎬 YouTube URL\n📁 Audio File"] --> B["Audio\nProcessor"]
+    A[" YouTube URL\n Audio File"] --> B["Audio\nProcessor"]
     B -->|WAV chunks| C["Transcriber\n(Whisper / Sarvam)"]
     C -->|Full transcript| D["Summarizer\n(Mistral LLM)"]
     C -->|Full transcript| E["Extractor\n(Action Items,\nDecisions, Questions)"]
     C -->|Full transcript| F["Vector Store\n(ChromaDB)"]
     F --> G["RAG Engine\n(LangChain LCEL)"]
-    G --> H["💬 Chat Q&A"]
-    D --> I["📄 Meeting Report"]
+    G --> H[" Chat Q&A"]
+    D --> I[" Meeting Report"]
     E --> I
 ```
 
@@ -133,7 +133,7 @@ ai-meeting-assistant/
 
 1. **Paste a YouTube URL** or **upload an audio/video file** (MP3, MP4, WAV, M4A, WebM)
 2. Select the **language** (English or Hinglish)
-3. Click **🚀 Process Meeting**
+3. Click ** Process Meeting**
 4. Explore results across tabs: Summary, Action Items, Decisions, Questions
 5. **Chat** with the AI about the meeting content
 6. **Download** a PDF or TXT report
@@ -144,7 +144,7 @@ ai-meeting-assistant/
 
 | Variable | Required | Description |
 |---|---|---|
-| `MISTRAL_API_KEY` | ✅ | Mistral AI API key for summarization & extraction |
+| `MISTRAL_API_KEY` | Yes | Mistral AI API key for summarization & extraction |
 | `SARVAM_API_KEY` | Optional | Sarvam AI key for Hinglish transcription |
 | `WHISPER_MODEL` | Optional | Whisper model size (`tiny`, `base`, `small`, `medium`, `large`). Default: `small` |
 
