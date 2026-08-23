@@ -6,7 +6,27 @@ from matplotlib.colors import LinearSegmentedColormap
 import io
 
 STOPWORDS = {
-    'the', 'a', 'an', 'and', 'or', 'but', 
+    'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by', 'from', 
+    'is', 'was', 'are', 'were', 'be', 'been', 'being', 'have', 'has', 'had', 'do', 'does', 'did', 
+    'will', 'would', 'could', 'should', 'may', 'might', 'shall', 'can', 'need', 'must', 'it', 'its', 
+    'this', 'that', 'these', 'those', 'i', 'you', 'he', 'she', 'we', 'they', 'me', 'him', 'her', 'us', 'them', 
+    'my', 'your', 'his', 'our', 'their', 'what', 'which', 'who', 'whom', 'when', 'where', 'why', 'how', 
+    'not', 'no', 'so', 'if', 'then', 'than', 'too', 'very', 'just', 'about', 'above', 'also', 'after', 'before', 
+    'like', 'get', 'got', 'going', 'go', 'know', 'think', 'thing', 'things', 'said', 'say', 'one', 'two', 
+    'well', 'yeah', 'yes', 'right', 'okay', 'ok', 'um', 'uh', 'ah', 'oh', 're', 've', 'll', 'm', 'd', 't', 's'
+}
+
+def clean_text(text: str) -> list:
+    """Lowercase and remove punctuation, return list of words."""
+    text = text.lower()
+    text = re.sub(r'[^a-z0-9\s]', '', text)
+    return text.split()
+
+def generate_word_cloud(transcript: str) -> bytes:
+    """
+    Generate a word cloud image from the transcript.
+    Returns PNG image as bytes.
+    Uses dark theme colors matching the app's gradient.
     """
     if not transcript or not transcript.strip():
         return b""
