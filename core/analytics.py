@@ -28,6 +28,23 @@ def generate_word_cloud(transcript: str) -> bytes:
     Returns PNG image as bytes.
     Uses dark theme colors matching the app's gradient.
     """
+    if not transcript or not transcript.strip():
+        return b""
+
+    # Custom colormap using the app's brand colors
+    # #3B82F6 (blue), #8B5CF6 (purple), #EC4899 (pink), #06B6D4 (cyan)
+    colors = ["#3B82F6", "#06B6D4", "#8B5CF6", "#EC4899", "#A855F7"]
+    cmap = LinearSegmentedColormap.from_list("BrandColors", colors)
+
+    wc = WordCloud(
+        width=800, 
+        height=400,
+        background_color="#0E1117", # App dark background
+        colormap=cmap,
+        stopwords=STOPWORDS,
+        max_words=100,
+        contour_width=0,
+        prefer_horizontal=0.9
     )
     
     wc.generate(transcript)
