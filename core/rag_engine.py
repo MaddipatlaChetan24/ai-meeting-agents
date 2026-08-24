@@ -16,14 +16,7 @@ def format_docs(docs):
     return "\n\n".join([doc.page_content for doc in docs])
 
 def build_rag_chain(transcript:str):
-
-    vector_store = build_vector_store(transcript)
-
-    retriever = get_retriever(vector_store, k = 4)
-
-    llm = get_llm()
-
-    prompt = ChatPromptTemplate.from_messages(
+Template.from_messages(
 
         [(
             "system",
