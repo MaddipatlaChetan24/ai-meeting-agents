@@ -28,22 +28,6 @@ If the answer is not found in the context, say:
 
 Always be concise and precise. If quoting someone, mention it clearly.
 
-Context from meeting transcript:
-{context}""",
-        ),
-        ("human", "{question}"),
-    ]
-    )
-
-    #full LCEL Rag pipeline 
-
-    rag_chain = (
-
-        {"context" : retriever | RunnableLambda(format_docs),
-         "question": RunnablePassthrough()
-         }
-         |prompt|llm|StrOutputParser()
-    )
 
     return rag_chain
 
