@@ -18,13 +18,6 @@ def split_transcript(transcript: str) -> list:
 
     return splitter.split_text(transcript)
 
-def summarize(transcript : str) -> str:
-    llm = get_llm()
-
-    map_prompt = ChatPromptTemplate.from_messages(
-        [
-        ("system", "Summarize this portion of a meeting transcript concisely."),
-        ("human", "{text}"),
     ]
     )
 
