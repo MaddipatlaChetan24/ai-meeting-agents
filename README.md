@@ -1,18 +1,6 @@
 <div align="center">
 
 #  AI Meeting Assistant
-
-**Transform any meeting recording into actionable insights in minutes.**
-
-Paste a YouTube link or upload an audio file — get a professional summary, action items, key decisions, and chat with your meeting using RAG-powered Q&A.
-
-[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)](https://python.org)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.35+-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io)
-[![LangChain](https://img.shields.io/badge/LangChain-LCEL-1C3C3C?logo=langchain&logoColor=white)](https://langchain.com)
-[![Mistral](https://img.shields.io/badge/Mistral_AI-LLM-FF7000?logo=data:image/svg+xml;base64,&logoColor=white)](https://mistral.ai)
-
-</div>
-
 ---
 
 ##  Features
