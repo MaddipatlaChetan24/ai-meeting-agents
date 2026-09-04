@@ -5,18 +5,7 @@ Hackathon Winning Edition
 Transcribe, summarise, extract insights and chat with your meetings.
 """
 
-import streamlit as st
-import os
-import tempfile
-import json
 
-load_dotenv()
-
-# ── Page config (must be first Streamlit call) ────────────────────────────────
-st.set_page_config(
-    page_title="AI Meeting Assistant",
-    page_icon="🎙️",
-    layout="wide",
     initial_sidebar_state="expanded",
 )
 
