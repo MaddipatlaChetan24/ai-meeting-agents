@@ -13,45 +13,7 @@ Transcribe, summarise, extract insights and chat with your meetings.
     .metric-row {
         display: flex;
         gap: 1rem;
-        margin-bottom: 1.5rem;
-    }
-    .metric-card {
-        flex: 1;
-        background: rgba(30, 41, 59, 0.6);
-        backdrop-filter: blur(12px);
-        border: 1px solid rgba(255,255,255,0.08);
-        border-radius: 12px;
-        padding: 1.1rem 1.3rem;
-        text-align: center;
-        transition: transform 0.3s;
-    }
-    .metric-card:hover { transform: translateY(-2px); border-color: rgba(59,130,246,0.5); }
-    .metric-card .value {
-        font-size: 1.6rem;
-        font-weight: 700;
-        color: #3B82F6;
-    }
-    .metric-card .label {
-        font-size: 0.8rem;
-        color: #94A3B8;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-    }
-
-    section[data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #0F172A 0%, #1E293B 100%);
-    }
-    
-    @keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
-    .fade-in { animation: fadeInUp 0.6s ease-out; }
-
-    .footer {
-        text-align: center;
-        color: #475569;
-        font-size: 0.78rem;
-        margin-top: 3rem;
-        padding-top: 1rem;
-        border-top: 1px solid #1E293B;
+        margin-botto
     }
     </style>
     """,
