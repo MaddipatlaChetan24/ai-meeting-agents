@@ -6,53 +6,7 @@ Transcribe, summarise, extract insights and chat with your meetings.
 """
 
 
-    initial_sidebar_state="expanded",
-)
-
-# ── Custom CSS ────────────────────────────────────────────────────────────────
-st.markdown(
-    """
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
-    html, body, [class*="css"] {
-        font-family: 'Inter', sans-serif;
-    }
-
-    @keyframes gradient-shift { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
-    .hero-title {
-        font-size: 3rem;
-        font-weight: 800;
-        background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 50%, #EC4899 100%);
-        background-size: 200% auto;
-        animation: gradient-shift 5s ease infinite;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 0.2rem;
-    }
-    .hero-subtitle {
-        color: #94A3B8;
-        font-size: 1.1rem;
-        font-weight: 300;
-        margin-bottom: 1.5rem;
-    }
-
-    .glass-card {
-        background: rgba(30, 41, 59, 0.6);
-        backdrop-filter: blur(12px);
-        border: 1px solid rgba(255,255,255,0.08);
-        border-radius: 16px;
-        padding: 1.5rem;
-        transition: transform 0.3s, box-shadow 0.3s;
-        margin-bottom: 1rem;
-    }
-    .glass-card:hover { 
-        transform: translateY(-4px); 
-        box-shadow: 0 8px 32px rgba(59,130,246,0.15); 
-    }
-    .glass-card h3 {
-        margin-top: 0;
-        font-weight: 600;
+   
         color: #F1F5F9;
     }
 
