@@ -7,39 +7,7 @@ Transcribe, summarise, extract insights and chat with your meetings.
 
 
    
-        color: #F1F5F9;
-    }
-
-    .metric-row {
-        display: flex;
-        gap: 1rem;
-        margin-botto
-    }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
-
-@st.cache_data(show_spinner=False)
-def load_lottieurl(url: str):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
-
-# ── Session-state defaults ───────────────────────────────────────────────────
-_defaults = {
-    "processed": False,
-    "title": "",
-    "transcript": "",
-    "summary": "",
-    "actions": "",
-    "decisions": "",
-    "questions": "",
-    "rag_chain": None,
-    "chat_history": [],
-    "sentiment_data": None,
-    "word_cloud": None,
+      
     "keyword_freq": None,
     "meeting_stats": None,
     "follow_up_email": "",
