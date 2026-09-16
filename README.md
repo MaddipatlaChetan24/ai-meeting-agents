@@ -106,7 +106,7 @@ The app opens at **http://localhost:8501**.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ai-meeting-assistant/
