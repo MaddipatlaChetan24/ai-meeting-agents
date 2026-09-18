@@ -15,13 +15,7 @@ import pandas as pd
 import requests
 from utils.pipeline import import_pipeline, cached_
 
-    @keyframes gradient-shift { 0%{background-pos
-        transition: transform 0.3s, box-shadow 0.3s;
-        margin-bottom: 1rem;
-    }
-    .glass-card:hover { 
-        transform: translateY(-4px); 
-        box-shadow: 0 8px 32px rgba(59,130,246,0.15); 
+    @keyframes gradien 8px 32px rgba(59,130,246,0.15); 
     }
     .glass-card h3 {
         margin-top: 0;
