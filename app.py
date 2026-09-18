@@ -12,18 +12,7 @@ import json
 import time
 from dotenv import load_dotenv
 
-    .metric-card:hover { transform: translateY(-2px); border-color: rgba(59,130,246,0.5); }
-    .metric-card .value {
-        font-size: 1.6rem;
-        font-weight: 700;
-        color: #3B82F6;
-    }
-    .metric-card .label {
-        font-size: 0.8rem;
-        color: #94A3B8;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-    }
+    .metr
 
     section[data-testid="stSidebar"] {
         background: linear-gradient(180deg, #0F172A 0%, #1E293B 100%);
