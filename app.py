@@ -13,19 +13,7 @@ import time
 from dotenv import load_dotenv
 
     .metr
-
-    section[data-testid="stSidebar"] {
-        backglid #1E293B;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
-
-@st.cache_data(show_spinner=False)
-def load_lottieurl(url: str):
-    r = requests.get(url)
-    if r.status_code != 200:
+00:
         return None
     return r.json()
 
