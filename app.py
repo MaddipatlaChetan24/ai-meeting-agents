@@ -11,22 +11,7 @@ import tempfile
 import json
 }
 for key, val in _defaults.items():
-    if key not in st.session_state:
-        st.session_state[key] = val
-
-
-# ═══════════════════════════════════════════════════════════════════════════════
-# SIDEBAR
-# ═══════════════════════════════════════════════════════════════════════════════
-with st.sidebar:
-    st.markdown("## 🎙️ AI Meeting Assistant")
-    st.markdown(
-        '<p class="hero-subtitle" style="font-size:0.9rem">Hackathon Edition</p>',
-        unsafe_allow_html=True,
-
-    youtube_url = ""
-    uploaded_file = None
-
+    if key not
     if input_mode == "🔗 YouTube URL":
         youtube_url = st.text_input(
             "YouTube URL",
