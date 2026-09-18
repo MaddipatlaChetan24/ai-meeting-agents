@@ -11,23 +11,6 @@ import tempfile
 import json
 }
 for key, val in _defaults.items():
-    if key not
-    if input_mode == "🔗 YouTube URL":
-        youtube_url = st.text_input(
-            "YouTube URL",
-            placeholder="https://www.youtube.com/watch?v=...",
-        )
-    else:
-        uploaded_file = st.file_uploader(
-            "Upload audio / video",
-            type=["mp3", "mp4", "wav", "m4a", "webm", "ogg", "flac"],
-        )
-
-    language = st.selectbox(
-        "Audio language",
-        ["English", "Hinglish (Hindi + English)"],
-        help="Hinglish uses Sarvam AI and requires a SARVAM_API_KEY.",
-    )
     lang_key = "hinglish" if "Hinglish" in language else "english"
 
     st.divider()
