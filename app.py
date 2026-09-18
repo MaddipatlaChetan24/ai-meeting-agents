@@ -9,17 +9,6 @@ import streamlit as st
 import os
 import tempfile
 import json
-import time
-from dotenv import load_dotenv
-
-    .metr
-00:
-        return None
-    "keyword_freq": None,
-    "meeting_stats": None,
-    "follow_up_email": "",
-    "youtube_url": "",
-    "audio_bytes": None
 }
 for key, val in _defaults.items():
     if key not in st.session_state:
