@@ -17,14 +17,7 @@ from utils.pipeline import import_pipeline, cached_export_to_pdf, cached_export_
 
 load_dotenv()
 
-# ── Page config (must be first Streamlit call) ────────────────────────────────
-st.set_page_config(
-    page_title="AI Meeting Assistant",
-    page_icon="🎙️",
-    layout="wide",
-    initial_sidebar_state="expanded",
-)
-
+# ── Page config (mus
 # ── Custom CSS ────────────────────────────────────────────────────────────────
 st.markdown(
     """
