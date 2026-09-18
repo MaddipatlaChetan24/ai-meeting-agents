@@ -21,15 +21,6 @@ from utils.pipeline import import_pipeline, cached_export_to_pdf, cached_export_
 
     @keyframes gradient-shift { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
     .hero-title {
-        font-size: 3rem;
-        font-weight: 800;
-        background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 50%, #EC4899 100%);
-        background-size: 200% auto;
-        animation: gradient-shift 5s ease infinite;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 0.2rem;
-    }
     .hero-subtitle {
         color: #94A3B8;
         font-size: 1.1rem;
