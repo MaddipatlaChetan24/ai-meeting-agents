@@ -15,19 +15,7 @@ from dotenv import load_dotenv
     .metr
 
     section[data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #0F172A 0%, #1E293B 100%);
-    }
-    
-    @keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
-    .fade-in { animation: fadeInUp 0.6s ease-out; }
-
-    .footer {
-        text-align: center;
-        color: #475569;
-        font-size: 0.78rem;
-        margin-top: 3rem;
-        padding-top: 1rem;
-        border-top: 1px solid #1E293B;
+        backglid #1E293B;
     }
     </style>
     """,
