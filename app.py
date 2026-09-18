@@ -23,15 +23,6 @@ with st.sidebar:
     st.markdown(
         '<p class="hero-subtitle" style="font-size:0.9rem">Hackathon Edition</p>',
         unsafe_allow_html=True,
-    )
-    st.divider()
-
-    input_mode = st.radio(
-        "Input source",
-        ["🔗 YouTube URL", "📁 Upload file"],
-        horizontal=True,
-        label_visibility="collapsed",
-    )
 
     youtube_url = ""
     uploaded_file = None
