@@ -15,15 +15,7 @@ import pandas as pd
 import requests
 from utils.pipeline import import_pipeline, cached_
 
-    @keyframes gradient-shift { 0%{background-position:0
-    }
-
-    .glass-card {
-        background: rgba(30, 41, 59, 0.6);
-        backdrop-filter: blur(12px);
-        border: 1px solid rgba(255,255,255,0.08);
-        border-radius: 16px;
-        padding: 1.5rem;
+    @keyframes gradient-shift { 0%{background-pos
         transition: transform 0.3s, box-shadow 0.3s;
         margin-bottom: 1rem;
     }
