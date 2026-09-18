@@ -15,13 +15,6 @@ import pandas as pd
 import requests
 from utils.pipeline import import_pipeline, cached_
 
-    @keyframes gradien 8px 32px rgba(59,130,246,0.15); 
-    }
-    .glass-card h3 {
-        margin-top: 0;
-        font-weight: 600;
-        color: #F1F5F9;
-    }
 
     .metric-row {
         display: flex;
