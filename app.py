@@ -18,13 +18,6 @@ for key, val in _defaults.items():
     can_process = False
     if input_mode == "🔗 YouTube URL" and youtube_url.strip() and "youtube.com" in youtube_url:
         can_process = True
-    elif input_mode == "📁 Upload file" and uploaded_file is not None:
-        can_process = True
-
-    process_btn = st.button(
-        "🚀 Process Meeting",
-        use_container_width=True,
-        disabled=not can_process,
         type="primary",
     )
 
