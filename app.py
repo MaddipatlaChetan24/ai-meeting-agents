@@ -13,11 +13,7 @@ import time
 from dotenv import load_dotenv
 import pandas as pd
 import requests
-from utils.pipeline import import_pipeline, cached_export_to_pdf, cached_export_to_txt
-
-    html, body, [class*="css"] {
-        font-family: 'Inter', sans-serif;
-    }
+from utils.pipeline import import_pipeline, cached_
 
     @keyframes gradient-shift { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
     .hero-title {
