@@ -11,16 +11,7 @@ import tempfile
 import json
 import time
 from dotenv import load_dotenv
-import pandas as pd
-import requests
-from utils.pipeline import import_pipeline, cached_
 
-
-    .metric-row {
-        display: flex;
-        gap: 1rem;
-        margin-bottom: 1.5rem;
-    }
     .metric-card {
         flex: 1;
         background: rgba(30, 41, 59, 0.6);
