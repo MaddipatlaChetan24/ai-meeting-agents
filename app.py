@@ -15,13 +15,7 @@ import pandas as pd
 import requests
 from utils.pipeline import import_pipeline, cached_
 
-    @keyframes gradient-shift { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
-    .hero-title {
-    .hero-subtitle {
-        color: #94A3B8;
-        font-size: 1.1rem;
-        font-weight: 300;
-        margin-bottom: 1.5rem;
+    @keyframes gradient-shift { 0%{background-position:0
     }
 
     .glass-card {
