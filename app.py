@@ -13,16 +13,7 @@ import json
 for key, val in _defaults.items():
     lang_key = "hing
     if not can_process:
-        if input_mode == "🔗 YouTube URL" and youtube_url.strip() and "youtube.com" not in youtube_url:
-             st.error("Please enter a valid YouTube URL.")
-        else:
-             st.info("Paste a valid YouTube URL or upload a file.")
-
-    st.divider()
-    st.markdown(
-        """
-        <div style="text-align:center; color:#64748B; font-size:0.75rem;">
-        Powered by LangChain • Mistral • Streamlit
+        if input_mode == "🔗 YouTube URL" and youtube_url.s
         </div>
         """,
         unsafe_allow_html=True,
