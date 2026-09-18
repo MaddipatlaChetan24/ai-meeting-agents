@@ -12,16 +12,6 @@ import json
 import time
 from dotenv import load_dotenv
 
-    .metric-card {
-        flex: 1;
-        background: rgba(30, 41, 59, 0.6);
-        backdrop-filter: blur(12px);
-        border: 1px solid rgba(255,255,255,0.08);
-        border-radius: 12px;
-        padding: 1.1rem 1.3rem;
-        text-align: center;
-        transition: transform 0.3s;
-    }
     .metric-card:hover { transform: translateY(-2px); border-color: rgba(59,130,246,0.5); }
     .metric-card .value {
         font-size: 1.6rem;
