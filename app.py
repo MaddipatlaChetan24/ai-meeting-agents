@@ -11,16 +11,7 @@ import tempfile
 import json
 }
 for key, val in _defaults.items():
-    lang_key = "hinglish" if "Hinglish" in language else "english"
-
-    st.divider()
-
-    can_process = False
-    if input_mode == "🔗 YouTube URL" and youtube_url.strip() and "youtube.com" in youtube_url:
-        can_process = True
-        type="primary",
-    )
-
+    lang_key = "hing
     if not can_process:
         if input_mode == "🔗 YouTube URL" and youtube_url.strip() and "youtube.com" not in youtube_url:
              st.error("Please enter a valid YouTube URL.")
