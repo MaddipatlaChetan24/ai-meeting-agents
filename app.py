@@ -15,21 +15,6 @@ from dotenv import load_dotenv
     .metr
 00:
         return None
-    return r.json()
-
-# ── Session-state defaults ───────────────────────────────────────────────────
-_defaults = {
-    "processed": False,
-    "title": "",
-    "transcript": "",
-    "summary": "",
-    "actions": "",
-    "decisions": "",
-    "questions": "",
-    "rag_chain": None,
-    "chat_history": [],
-    "sentiment_data": None,
-    "word_cloud": None,
     "keyword_freq": None,
     "meeting_stats": None,
     "follow_up_email": "",
