@@ -15,15 +15,6 @@ import pandas as pd
 import requests
 from utils.pipeline import import_pipeline, cached_export_to_pdf, cached_export_to_txt
 
-load_dotenv()
-
-# ── Page config (mus
-# ── Custom CSS ────────────────────────────────────────────────────────────────
-st.markdown(
-    """
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
     html, body, [class*="css"] {
         font-family: 'Inter', sans-serif;
     }
