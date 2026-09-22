@@ -13,17 +13,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: ai-meeting-assistant
-    image: ai-meeting-assistant:latest
-
-    # ── Port mapping ──────────────────────────────────
-    ports:
-      - "8501:8501"
-
-    # ── Environment variables (API keys) ──────────────
-    # Option 1: Load from .env file (recommended for development)
-    env_file:
-      - .env
 
     # Option 2: Explicit variables (uncomment & set for production)
     # environment:
