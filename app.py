@@ -13,10 +13,6 @@ import time
 from dotenv import load_dotenv
 import pandas as pd
 import requests
-    .metric-row {
-        display: flex;
-        gap: 1rem;
-        margin-bottom: 1.5rem;
     }
     .metric-card {
         border-radius: 12px;
