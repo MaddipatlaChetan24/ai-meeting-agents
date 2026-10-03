@@ -18,9 +18,6 @@ from utils.pipeline import import_pipeline, cached_export_to_pdf, cached_export_
         font-size: 3rem;
         font-weight: 800;
         background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 50%, #EC4899 100%);
-        background-size: 200% auto;
-        animation: gradient-shift 5s ease infinite;
-        margin-bottom: 0.2rem;
     }
     .hero-subtitle {
         color: #94A3B8;
