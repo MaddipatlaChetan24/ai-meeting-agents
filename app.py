@@ -17,10 +17,6 @@ import requests
         color: #94A3B8;
         font-size: 1.1rem;
         font-weight: 300;
-        margin-bottom: 1.5rem;
-    }
-
-    .glass-card {
         background: rgba(30, 41, 59, 0.6);
         backdrop-filter: blur(12px);
         border: 1px solid rgba(255,255,255,0.08);
