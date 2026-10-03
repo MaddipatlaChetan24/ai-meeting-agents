@@ -13,14 +13,6 @@ import time
 from dotenv import load_dotenv
 import pandas as pd
 import requests
-    .hero-subtitle {
-        border: 1px solid rgba(255,255,255,0.08);
-    .glass-card h3 {
-        margin-top: 0;
-        font-weight: 600;
-        color: #F1F5F9;
-    }
-
     .metric-row {
         display: flex;
         gap: 1rem;
