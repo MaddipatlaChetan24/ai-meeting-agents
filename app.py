@@ -26,8 +26,6 @@ import requests
         border-radius: 12px;
         padding: 1.1rem 1.3rem;
         text-align: center;
-        transition: transform 0.3s;
-    }
     .metric-card:hover { transform: translateY(-2px); border-color: rgba(59,130,246,0.5); }
     .metric-card .value {
         font-size: 1.6rem;
