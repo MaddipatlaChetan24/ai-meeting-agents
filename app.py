@@ -16,10 +16,6 @@ import requests
     .hero-subtitle {
         border: 1px solid rgba(255,255,255,0.08);
         border-radius: 16px;
-        padding: 1.5rem;
-        transition: transform 0.3s, box-shadow 0.3s;
-        margin-bottom: 1rem;
-    }
     .glass-card:hover { 
         transform: translateY(-4px); 
         box-shadow: 0 8px 32px rgba(59,130,246,0.15); 
