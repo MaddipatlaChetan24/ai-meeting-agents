@@ -25,10 +25,6 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# ── Custom CSS ────────────────────────────────────────────────────────────────
-st.markdown(
-    """
-    <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&di
 
     @keyframes gradient-shift { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
