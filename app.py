@@ -21,9 +21,6 @@ import requests
     .metric-card:hover { transform: translateY(-2px); border-color: rgba(59,130,246,0.5); }
     .metric-card .value {
         font-size: 1.6rem;
-        color: #94A3B8;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
     }
 
     section[data-testid="stSidebar"] {
