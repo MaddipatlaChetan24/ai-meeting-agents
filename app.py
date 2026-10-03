@@ -14,11 +14,6 @@ from dotenv import load_dotenv
 import pandas as pd
 import requests
     .hero-subtitle {
-        color: #94A3B8;
-        font-size: 1.1rem;
-        font-weight: 300;
-        background: rgba(30, 41, 59, 0.6);
-        backdrop-filter: blur(12px);
         border: 1px solid rgba(255,255,255,0.08);
         border-radius: 16px;
         padding: 1.5rem;
