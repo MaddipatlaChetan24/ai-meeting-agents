@@ -15,11 +15,6 @@ import pandas as pd
 import requests
     .hero-subtitle {
         border: 1px solid rgba(255,255,255,0.08);
-        border-radius: 16px;
-    .glass-card:hover { 
-        transform: translateY(-4px); 
-        box-shadow: 0 8px 32px rgba(59,130,246,0.15); 
-    }
     .glass-card h3 {
         margin-top: 0;
         font-weight: 600;
