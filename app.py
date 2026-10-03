@@ -15,11 +15,6 @@ import pandas as pd
 import requests
 from utils.pipeline import import_pipeline, cached_export_to_pdf, cached_export_to_txt
 
-load_dotenv()
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&di
-
-    @keyframes gradient-shift { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
-    .hero-title {
         font-size: 3rem;
         font-weight: 800;
         background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 50%, #EC4899 100%);
