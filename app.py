@@ -16,11 +16,6 @@ import requests
 from utils.pipeline import import_pipeline, cached_export_to_pdf, cached_export_to_txt
 
 load_dotenv()
-    page_icon="🎙️",
-    layout="wide",
-    initial_sidebar_state="expanded",
-)
-
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&di
 
     @keyframes gradient-shift { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
