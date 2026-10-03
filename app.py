@@ -19,10 +19,6 @@ import requests
         margin-bottom: 1.5rem;
     }
     .metric-card {
-        flex: 1;
-        background: rgba(30, 41, 59, 0.6);
-        backdrop-filter: blur(12px);
-        border: 1px solid rgba(255,255,255,0.08);
         border-radius: 12px;
         padding: 1.1rem 1.3rem;
         text-align: center;
