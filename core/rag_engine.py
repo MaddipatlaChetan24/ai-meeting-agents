@@ -10,20 +10,6 @@ def get_llm():
         model="mistral-small-latest",
         mistral_api_key=os.getenv("MISTRAL_API_KEY"),
         temperature=0.3,
-    )
-
-def format_docs(docs):
-    return "\n\n".join([doc.page_content for doc in docs])
-
-def build_rag_chain(transcript:str):
-
-    vector_store = build_vector_store(transcript)
-
-    retriever = get_retriever(vector_store, k = 4)
-
-    llm = get_llm()
-
-    prompt = ChatPromptTemplate.from_messages(
 
         [(
             "system",
