@@ -29,13 +29,6 @@ def analyze_sentiment(transcript: str, chunk_size: int = 500) -> dict:
 
     for i, chunk in enumerate(chunks):
         subj = blob.sentiment.subjectivity
-            label = "Excellent"
-        else:
-            label = "Neutral"
-            'subjectivity': subj,
-            'label': label
-        }
-        timeline.append(chunk_data)
         
         total_polarity += pol
         total_subjectivity += subj
