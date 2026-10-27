@@ -39,11 +39,6 @@ def analyze_sentiment(transcript: str, chunk_size: int = 500) -> dict:
             most_negative = chunk_data
 
     num_chunks = len(chunks)
-    avg_polarity = total_polarity / num_chunks
-    avg_subjectivity = total_subjectivity / num_chunks
-    
-    # Overall Label
-    if avg_polarity > 0.1:
         overall_label = "Positive"
         emoji = "😊"
     elif avg_polarity < -0.1:
