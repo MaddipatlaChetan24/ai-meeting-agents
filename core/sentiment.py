@@ -28,8 +28,6 @@ def analyze_sentiment(transcript: str, chunk_size: int = 500) -> dict:
     most_negative = None
 
     for i, chunk in enumerate(chunks):
-        blob = TextBlob(chunk)
-        pol = blob.sentiment.polarity
         subj = blob.sentiment.subjectivity
         
         # Labeling
