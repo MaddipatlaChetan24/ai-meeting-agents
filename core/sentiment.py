@@ -40,9 +40,6 @@ def analyze_sentiment(transcript: str, chunk_size: int = 500) -> dict:
             'label': overall_label,
             'emoji': emoji
         },
-        'timeline': timeline,
-        'highlights': {
-            'most_positive': most_positive,
             'most_negative': most_negative
         }
     }
