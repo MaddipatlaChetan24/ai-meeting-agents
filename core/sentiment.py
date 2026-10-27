@@ -29,9 +29,6 @@ def analyze_sentiment(transcript: str, chunk_size: int = 500) -> dict:
 
     for i, chunk in enumerate(chunks):
         subj = blob.sentiment.subjectivity
-        
-        # Labeling
-        if pol > 0.5:
             label = "Excellent"
         else:
             label = "Neutral"
