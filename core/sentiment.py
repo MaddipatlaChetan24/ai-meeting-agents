@@ -37,11 +37,6 @@ def analyze_sentiment(transcript: str, chunk_size: int = 500) -> dict:
             label = "Excellent"
         else:
             label = "Neutral"
-
-        chunk_data = {
-            'chunk_index': i + 1,
-            'text_preview': chunk[:80].replace('\n', ' ') + "...",
-            'polarity': pol,
             'subjectivity': subj,
             'label': label
         }
