@@ -35,12 +35,6 @@ def analyze_sentiment(transcript: str, chunk_size: int = 500) -> dict:
         # Labeling
         if pol > 0.5:
             label = "Excellent"
-        elif pol > 0.1:
-            label = "Positive"
-        elif pol < -0.5:
-            label = "Heated"
-        elif pol < -0.1:
-            label = "Negative"
         else:
             label = "Neutral"
 
