@@ -34,17 +34,6 @@ def analyze_sentiment(transcript: str, chunk_size: int = 500) -> dict:
         total_subjectivity += subj
         
         if most_positive is None or pol > most_positive['polarity']:
-            most_positive = chunk_data
-        if most_negative is None or pol < most_negative['polarity']:
-        emoji = "😊"
-    elif avg_polarity < -0.1:
-        overall_label = "Negative"
-        emoji = "😟"
-    else:
-        overall_label = "Neutral"
-        emoji = "😐"
-
-    if most_positive and most_positive['polarity'] <= 0.1:
         most_positive = None
     if most_negative and most_negative['polarity'] >= -0.1:
         most_negative = None
