@@ -7,11 +7,6 @@ def analyze_sentiment(transcript: str, chunk_size: int = 500) -> dict:
     
     Returns dict with:
     - 'overall': {'polarity': float, 'subjectivity': float, 'label': str, 'emoji': str}
-    - 'timeline': [{'chunk_index': int, 'text_preview': str, 'polarity': float, 'subjectivity': float, 'label': str}]
-    - 'highlights': {'most_positive': dict, 'most_negative': dict}
-    """
-    if not transcript or not transcript.strip():
-        return {
             'overall': {'polarity': 0.0, 'subjectivity': 0.0, 'label': 'Neutral', 'emoji': '😐'},
             'timeline': [],
             'highlights': {'most_positive': None, 'most_negative': None}
