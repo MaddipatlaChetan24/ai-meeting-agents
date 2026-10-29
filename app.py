@@ -19,6 +19,8 @@ load_dotenv()
 
 # ── Page config (must be first Streamlit call) ────────────────────────────────
 st.set_page_config(
+    page_title="AI Meeting Assistant",
+    page_icon="🎙️",
     layout="wide",
     initial_sidebar_state="expanded",
 )
