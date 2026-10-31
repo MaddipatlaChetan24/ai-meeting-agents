@@ -38,8 +38,6 @@ with colA:
         
 with colB:
     if st.session_state.get("keyword_freq"):
-        st.markdown("#### Top Keywords")
-        df = pd.DataFrame(st.session_state["keyword_freq"]).head(10)
         fig = px.bar(df, x='count', y='word', orientation='h')
         fig.update_layout(height=300, margin=dict(l=0, r=0, t=0, b=0))
         fig.update_traces(marker_color='#3B82F6')
