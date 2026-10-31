@@ -23,7 +23,7 @@ with col1:
     st.metric("Total Words", f"{stats.get('total_words', 0):,}")
 with col2:
     st.metric("Estimated Duration", f"{stats.get('estimated_duration_min', 0)} min")
-    st.metric("Overall Mood", f"{sentiment.get('emoji', '😐')} {sentiment.get('label', 'Neutral')}")
+    st.metric("Overall Mood", f"{sentiment.get('emoji'} {sentiment.get('label', 'Neutral')}")
 
 st.divider()
 
