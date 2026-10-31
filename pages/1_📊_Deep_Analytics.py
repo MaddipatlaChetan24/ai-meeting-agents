@@ -33,8 +33,6 @@ colA, colB = st.columns(2)
 with colA:
     if st.session_state.get("word_cloud"):
         st.markdown("#### Topic Cloud")
-        st.image(st.session_state["word_cloud"], use_container_width=True)
-        
 with colB:
     if st.session_state.get("keyword_freq"):
         fig = px.bar(df, x='count', y='word', orientation='h')
