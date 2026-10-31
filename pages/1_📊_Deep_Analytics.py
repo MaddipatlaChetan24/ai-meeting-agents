@@ -43,12 +43,6 @@ with colB:
         
 st.divider()
 
-st.markdown("### Emotional Arc")
-sent_data = st.session_state.get("sentiment_data", {})
-if sent_data and 'timeline' in sent_data:
-    
-    fig2 = px.line(df_sent, x='chunk_index', y='polarity', hover_data=['text_preview', 'label'], markers=True)
-    fig2.add_hrect(y0=0.1, y1=1, line_width=0, fillcolor="rgba(34,197,94,0.1)", opacity=0.2)
     fig2.add_hrect(y0=-1, y1=-0.1, line_width=0, fillcolor="rgba(239,68,68,0.1)", opacity=0.2)
     fig2.update_layout(height=400, yaxis_title="Positivity Score", xaxis_title="Timeline Segment")
     fig2.update_traces(line_color='#8B5CF6')
