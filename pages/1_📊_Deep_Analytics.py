@@ -28,17 +28,6 @@ with col2:
 st.divider()
 with colA:
     if st.session_state.get("word_cloud"):
-        st.markdown("#### Topic Cloud")
-with colB:
-    if st.session_state.get("keyword_freq"):
-        fig = px.bar(df, x='count', y='word', orientation='h')
-        fig.update_layout(height=300, margin=dict(l=0, r=0, t=0, b=0))
-        fig.update_traces(marker_color='#3B82F6')
-        fig.update_yaxes(autorange="reversed")
-        st.plotly_chart(fig, use_container_width=True)
-        
-st.divider()
-
     fig2.add_hrect(y0=-1, y1=-0.1, line_width=0, fillcolor="rgba(239,68,68,0.1)", opacity=0.2)
     fig2.update_layout(height=400, yaxis_title="Positivity Score", xaxis_title="Timeline Segment")
     fig2.update_traces(line_color='#8B5CF6')
