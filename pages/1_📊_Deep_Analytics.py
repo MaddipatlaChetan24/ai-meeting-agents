@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from utils.pipeline import import_pipeline
 
-st.set_page_config(page_title="Deep Analytics", page_icon="📊", layout="wide")
+st.set_page_config(page_title="Deep Analytics", layout="wide")
 
 if not st.session_state.get("processed", False):
     st.warning("Please upload and process a meeting on the Home page first.")
