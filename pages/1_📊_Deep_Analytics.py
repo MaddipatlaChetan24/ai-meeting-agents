@@ -26,10 +26,6 @@ with col2:
     st.metric("Overall Mood", f"{sentiment.get('emoji'} {sentiment.get('label', 'Neutral')}")
 
 st.divider()
-
-st.markdown("### Topic Cloud & Keywords")
-colA, colB = st.columns(2)
-
 with colA:
     if st.session_state.get("word_cloud"):
         st.markdown("#### Topic Cloud")
