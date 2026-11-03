@@ -22,9 +22,6 @@ def build_rag_chain(transcript:str):
     retriever = get_retriever(vector_store, k = 4)
 
     llm = get_llm()
-
-    prompt = ChatPromptTemplate.from_messages(
-
         [(
             "system",
             """You are an expert meeting assistan
