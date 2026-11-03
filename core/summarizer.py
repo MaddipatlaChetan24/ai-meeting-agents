@@ -25,9 +25,6 @@ def build_rag_chain(transcript:str):
         [(
             "system",
             """You are an expert meeting assistan
-If the answer is not found in the context, say: 
-"I could not find this information in the meeting transcript."
-
 Always be concise and precise. If quoting someone, mention it clearly.
 
 Context from meeting transcript:
