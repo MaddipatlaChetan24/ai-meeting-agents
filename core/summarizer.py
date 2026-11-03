@@ -32,7 +32,7 @@ Always be concise and precise. If quoting someone, mention it clearly.
 
 Context from meeting transcript:
 {context}""",
-        ),
+
         ("human", "{question}"),
     ]
     )
