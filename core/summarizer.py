@@ -34,17 +34,7 @@ Context from meeting transcript:
     ]
     )
 
-    #full LCEL Rag pipeline 
 
-    rag_chain = (
-
-        {"context" : retriever | RunnableLambda(format_docs),
-         "question": RunnablePassthrough()
-         }
-         |prompt|llm|StrOutputParser()
-    )
-
-    return rag_chain
 
 
 
