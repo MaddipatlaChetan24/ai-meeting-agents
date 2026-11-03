@@ -27,9 +27,7 @@ def build_rag_chain(transcript:str):
 
         [(
             "system",
-            """You are an expert meeting assistant. Answer the user's question 
-based ONLY on the meeting transcript context provided below.
-
+            """You are an expert meeting assistan
 If the answer is not found in the context, say: 
 "I could not find this information in the meeting transcript."
 
