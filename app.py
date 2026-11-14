@@ -1,3 +1,4 @@
+
 """
 AI Meeting Assistant — Streamlit UI
 ====================================
@@ -405,5 +406,8 @@ else:
 st.markdown(
     """
     <div class="footer">
-        AI Meeting Assistant · Hackathon Edition · 
+        AI Meeting Assistant · Hackathon Edition · Built with LangChain & Streamlit
+    </div>
+    """,
+    unsafe_allow_html=True,
 )
