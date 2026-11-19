@@ -133,7 +133,7 @@ else
     echo "   Checking logs..."
     ${SSH_CMD} "cd ${REMOTE_DIR} && docker compose logs --tail=30"
     echo ""
-    echo "   The container may still be starting (Whisper model download)."
+    echo "   The container may still be starting (Whisper model down
     echo "   Check again in a minute with:"
     echo "   ${SSH_CMD} 'docker compose -f ${REMOTE_DIR}/docker-compose.yml logs -f'"
 fi
